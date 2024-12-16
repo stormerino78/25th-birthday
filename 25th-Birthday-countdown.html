@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Comic Sans MS', sans-serif;
+            background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+            color: #2d3436;
+            text-align: center; /* Center text */
+            box-sizing: border-box; /* Ensure padding doesn't overflow */
+        }
+        h1 {
+            font-size: 2.5em; /* Adjust font size */
+            margin-bottom: 20px;
+            color: #6c5ce7;
+            text-shadow: 2px 2px #fdcb6e;
+        }
+        #timer {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #d63031;
+            text-shadow: 1px 1px #ffffff;
+        }
+        #sound-toggle {
+            font-size: 30px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            color: #6c5ce7;
+            display: none;
+        }
+        #sound-toggle.muted {
+            color: #d63031;
+        }
+        #desc {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #000000;
+            display: none;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Smaller font size on tablets */
+            }
+            #timer {
+                font-size: 1.8em; /* Smaller font size on tablets */
+            }
+            #desc {
+                font-size: 1em; /* Adjust description font size */
+            }
+            #sound-toggle {
+                font-size: 25px; /* Adjust sound toggle icon size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* Even smaller font size on phones */
+            }
+            #timer {
+                font-size: 1.5em; /* Even smaller font size on phones */
+            }
+            #desc {
+                font-size: 0.9em; /* Adjust description font size */
+            }
+            #sound-toggle {
+                font-size: 20px; /* Adjust sound toggle icon size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Apertura de la ... 🎂</h1>
+    <div id="timer">00 Days 00:00:00</div>
+    <div id="desc">¡Hay regalos dispersos por toda tu casa, ve a encontrarlos!</div>
+    <div id="sound-toggle">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    <script>
+        const _0xe94ebc=_0x46b1;function _0x46b1(_0x5b9176,_0x705552){const _0x535d69=_0x535d();return _0x46b1=function(_0x46b18d,_0x4acce4){_0x46b18d=_0x46b18d-0x1b8;let _0x102592=_0x535d69[_0x46b18d];return _0x102592;},_0x46b1(_0x5b9176,_0x705552);}(function(_0xb39dc1,_0x11adc0){const _0x2e4d48=_0x46b1,_0xfb6d04=_0xb39dc1();while(!![]){try{const _0x586525=-parseInt(_0x2e4d48(0x1cb))/0x1+parseInt(_0x2e4d48(0x1bb))/0x2+-parseInt(_0x2e4d48(0x1b9))/0x3+-parseInt(_0x2e4d48(0x1c1))/0x4*(parseInt(_0x2e4d48(0x1b8))/0x5)+-parseInt(_0x2e4d48(0x1bc))/0x6+-parseInt(_0x2e4d48(0x1d6))/0x7+parseInt(_0x2e4d48(0x1c6))/0x8*(parseInt(_0x2e4d48(0x1c8))/0x9);if(_0x586525===_0x11adc0)break;else _0xfb6d04['push'](_0xfb6d04['shift']());}catch(_0x438208){_0xfb6d04['push'](_0xfb6d04['shift']());}}}(_0x535d,0x4bf54));let isMuted=!![],audio=new Audio(_0xe94ebc(0x1dc));audio[_0xe94ebc(0x1d3)]=!![],audio[_0xe94ebc(0x1d8)]=0x1,document['addEventListener']('DOMContentLoaded',function(){const _0x175546=_0xe94ebc,_0x282054=document[_0x175546(0x1db)]('#sound-toggle\x20i');_0x282054['classList']['remove'](_0x175546(0x1d1)),_0x282054[_0x175546(0x1d0)][_0x175546(0x1d5)](_0x175546(0x1c2)),document[_0x175546(0x1cc)](_0x175546(0x1d4))[_0x175546(0x1d0)][_0x175546(0x1d5)]('muted');});function _0x535d(){const _0x2b4856=['querySelector','Parchis_-_Cumpleanos_feliz.mp3','4610CJjKLh','1747707Vbpccr','desc','487796MQwsgJ','2057778FSWZyx','catch','remove','style','floor','24uJIBom','fa-volume-mute','\x20Days\x20','muted','block','13686104aKRsMn','log','9Seygkg','timer','Audio\x20playback\x20failed:','143486CIhRcb','getElementById','addEventListener','display','#sound-toggle\x20i','classList','fa-volume-up','padStart','loop','sound-toggle','add','3982909sHPDDX','2024-12-31T09:00:00','currentTime','pause','textContent'];_0x535d=function(){return _0x2b4856;};return _0x535d();}function restartAudio(){const _0x5cdd8a=_0xe94ebc;audio[_0x5cdd8a(0x1d8)]=0x1,!isMuted&&audio['play']()[_0x5cdd8a(0x1bd)](_0xbcfab=>console['log'](_0x5cdd8a(0x1ca),_0xbcfab));}function startCountdown(_0x20349d){const _0x3a091b=_0xe94ebc,_0x953ae6=document['getElementById'](_0x3a091b(0x1c9));function _0x341b85(){const _0x1aca6b=_0x3a091b,_0x1b08a8=new Date(),_0x20703d=_0x20349d-_0x1b08a8;console[_0x1aca6b(0x1c7)](_0x20703d);if(_0x20703d<=0x0){triggerCelebration(),clearInterval(_0x475df4);return;}const _0x1ff37f=Math[_0x1aca6b(0x1c0)](_0x20703d/(0x3e8*0x3c*0x3c*0x18)),_0x4f0646=String(Math[_0x1aca6b(0x1c0)](_0x20703d/(0x3e8*0x3c*0x3c)%0x18))[_0x1aca6b(0x1d2)](0x2,'0'),_0x5271fa=String(Math['floor'](_0x20703d/(0x3e8*0x3c)%0x3c))['padStart'](0x2,'0'),_0x4ec343=String(Math[_0x1aca6b(0x1c0)](_0x20703d/0x3e8%0x3c))[_0x1aca6b(0x1d2)](0x2,'0');_0x953ae6[_0x1aca6b(0x1da)]=_0x1ff37f+_0x1aca6b(0x1c3)+_0x4f0646+':'+_0x5271fa+':'+_0x4ec343;}const _0x475df4=setInterval(_0x341b85,0x3e8);_0x341b85();}function triggerCelebration(){const _0x3469a4=_0xe94ebc,_0xdc4776=document['getElementById'](_0x3469a4(0x1c9));_0xdc4776[_0x3469a4(0x1da)]='🎁\x20Búsqueda\x20de\x20regalos\x20🎁';const _0x8b0d34=document[_0x3469a4(0x1cc)](_0x3469a4(0x1ba));_0x8b0d34['style'][_0x3469a4(0x1ce)]='block';const _0x1d417b=document[_0x3469a4(0x1cc)](_0x3469a4(0x1d4));_0x1d417b[_0x3469a4(0x1bf)][_0x3469a4(0x1ce)]=_0x3469a4(0x1c5),!isMuted&&restartAudio(),document[_0x3469a4(0x1cc)]('sound-toggle')[_0x3469a4(0x1cd)]('click',function(){const _0x17ed35=_0x3469a4;isMuted=!isMuted;const _0x2f419d=document[_0x17ed35(0x1db)](_0x17ed35(0x1cf));isMuted?(_0x2f419d['classList']['remove'](_0x17ed35(0x1d1)),_0x2f419d[_0x17ed35(0x1d0)][_0x17ed35(0x1d5)](_0x17ed35(0x1c2)),document['getElementById'](_0x17ed35(0x1d4))[_0x17ed35(0x1d0)][_0x17ed35(0x1d5)](_0x17ed35(0x1c4)),audio[_0x17ed35(0x1d9)]()):(_0x2f419d[_0x17ed35(0x1d0)][_0x17ed35(0x1be)](_0x17ed35(0x1c2)),_0x2f419d['classList'][_0x17ed35(0x1d5)](_0x17ed35(0x1d1)),document[_0x17ed35(0x1cc)]('sound-toggle')[_0x17ed35(0x1d0)][_0x17ed35(0x1be)]('muted'),restartAudio());});}const targetDate=new Date(_0xe94ebc(0x1d7));startCountdown(targetDate),window['addEventListener']('load',restartAudio);
+    </script>
+</body>
+</html>
