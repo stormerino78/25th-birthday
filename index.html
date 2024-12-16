@@ -49,6 +49,27 @@
             display: none;
         }
 
+        .glitter {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-image: url('glitter.gif'); /* Replace with the path to your glitter GIF */
+            background-size: cover;
+            pointer-events: none;
+            animation: fadeInOut 3s ease-in-out;
+            z-index: -1;
+        }
+        
+        h1, #timer, #desc, #sound-toggle {
+            position: relative; /* Set relative position to ensure they appear above glitter */
+            z-index: 1; /* Higher than the glitter */
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             h1 {
